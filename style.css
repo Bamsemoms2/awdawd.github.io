@@ -1,0 +1,114 @@
+#Velkommen p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+body{
+
+  background-color:#297bb2;
+}
+
+p{
+ font-family: Arial, Arial Black, Helvetica, sans-serif, Verdana;
+ font-size: 20px;
+ text-align: center;
+
+
+}
+-------------------------------------------
+
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+%test {
+  position: absolute;
+	content: '';
+	transition: all .5s;
+}
+
+.button {
+	display: inline-block;
+	padding: 20px 40px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	vertical-align: middle;
+	font-family: 'Rubik One', sans-serif;
+	text-decoration: none;
+	font-size: 4vw;
+	transition: all .5s;
+	background-color: #000000;
+
+	&::before {
+    @extend %test;
+		bottom: -15px;
+		height: 15px;
+		width: 100%;
+		left: 8px;
+		transform: skewX(45deg);
+		background-color: darken(#3498db, 20%);
+	}
+
+	&::after {
+		@extend %test;
+		right: -15px;
+		height: 100%;
+		width: 15px;
+		bottom: -8px;
+		transform: skewY(45deg);
+		background-color: darken(#3498db, 30%);
+	}
+
+	&:active {
+		margin-left: 10px;
+		margin-top: 10px;
+		&::before {
+			bottom: -5px;
+			height: 5px;
+			left: 3px;
+		}
+
+    &::after {
+			right: -5px;
+			width: 5px;
+			bottom: -3px;
+		}
+	}
+}
