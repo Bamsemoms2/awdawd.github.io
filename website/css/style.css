@@ -1,0 +1,73 @@
+
+h1{
+	font-family: Arial, Arial Black, Helvetica, sans-serif, Verdana;
+	font-size: 34px;
+	margin: auto;
+	color: #000000;
+	text-align: center;
+}
+
+p{
+ font-family: Arial, Arial Black, Helvetica, sans-serif, Verdana;
+ font-size: 20px;
+ text-align: center;
+}
+
+h3{
+	font-family: Arial, Arial Black, Helvetica, sans-serif, Verdana;
+	font-size: 34px;
+	margin: auto;
+	color: #000000;
+	text-align: center;
+	<!--- Må bestemme hvor teksten skal vare --->
+
+
+}
+
+body{
+       background-color:#297bb2; 
+
+
+}
+
+}
+
+.button {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+}
+
+
+
+
+ul {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+	 background-color: #333;
+}
+
+li {
+	 float: left;
+}
+
+li a {
+	 display: block;
+	 color: white;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none;
+}
+
+li a:hover {
+	 background-color: #111;
+}
